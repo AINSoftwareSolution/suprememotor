@@ -65,7 +65,7 @@ body {
   letter-spacing: 0.07em;
 }
 
-.sub-title:before, .sub-title:after {
+.sub-title:before, .sub-title-after:after {
   content: "";
   position: relative;
   width: 40px;
@@ -76,7 +76,7 @@ body {
   top: -4px;
 }
 
-.sub-title:after {
+.sub-title-after:after {
   margin-right: 0;
   margin-left: 12px;
 }

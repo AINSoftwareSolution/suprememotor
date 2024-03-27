@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Banner = () => {
     return (
-        <div className="hero-wrapper bg-cover bg-center pt-28 text-white">
+        <div className="hero-wrapper bg-cover bg-center pt-28 text-white px-4 lg:px-6">
             <div className="container mx-auto max-w-screen-xl">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 lg:flex lg:flex-row-reverse items-center">
                     <div className="hero-style1">
