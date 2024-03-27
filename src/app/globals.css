@@ -50,7 +50,11 @@ body {
 }
 
 .hero-wrapper {
-  background-image: url('../../src/app/images/banner-bg.png');
+  background-image: url('../app/images/banner-bg.png');
+}
+
+footer{
+  background-image: url('../app/images/footer-bg.png');
 }
 
 .sub-title {

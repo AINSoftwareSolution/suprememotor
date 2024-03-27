@@ -22,7 +22,7 @@ const Banner = () => {
                             </span>
                         </h1>
 
-                        <div className="flex gap-4 mt-6 flex-wrap">
+                        <div className="flex gap-4 mt-6 flex-wrap w-full">
                             <Link href="/about"
                                 className="inline-block border-none rounded-xl text-center bg-red text-white 
                              font-bold text-md uppercase px-8 py-4 overflow-hidden">Learn About Us</Link>
