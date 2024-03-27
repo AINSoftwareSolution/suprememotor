@@ -59,7 +59,7 @@ const Header: React.FC<{}> = () => {
                                 {
                                     [['/', 'Home'], ['/about-us', 'About'], ['/services', 'Services'], ['/contact', 'Contact'],]
                                         .map(([url, title]) => (
-                                            <li>
+                                            <li key={title}>
                                                 <Link
                                                     href={url}
                                                     className="block py-2 pr-4 pl-3 t  border-b border-gray-100 hover:bg-gray-50 
