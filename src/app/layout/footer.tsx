@@ -23,8 +23,8 @@ const Footer = () => {
                         <ul className="text-gray-500 font-medium">
                             {
                                 services.map((service) => (
-                                    <li className="mb-4">
-                                        <Link href="/" className="hover:underline">{service.title}</Link>
+                                    <li className="mb-4" key={service?.title}>
+                                        <Link href="/" className="hover:underline">{service?.title}</Link>
                                     </li>
                                 ))
                             }
@@ -39,10 +39,10 @@ const Footer = () => {
                         <div className="flex gap-4 mt-6 flex-wrap w-full">
                             <button
                                 className="inline-block border-none rounded-xl text-center bg-red text-white 
-                             font-bold text-md uppercase px-8 py-4 overflow-hidden">Book Apointment</button>
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Book Apointment</button>
                             <Link href="/contact"
                                 className="inline-block border border-white rounded-xl text-center text-white 
-                             font-bold text-md uppercase px-8 py-4 overflow-hidden">Ask Queries</Link>
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Ask Queries</Link>
                         </div>
                     </div>
                 </div>

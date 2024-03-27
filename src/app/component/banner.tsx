@@ -25,10 +25,10 @@ const Banner = () => {
                         <div className="flex gap-4 mt-6 flex-wrap w-full">
                             <Link href="/about"
                                 className="inline-block border-none rounded-xl text-center bg-red text-white 
-                             font-bold text-md uppercase px-8 py-4 overflow-hidden">Learn About Us</Link>
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Learn About Us</Link>
                             <Link href="/services"
                                 className="inline-block border border-white rounded-xl text-center text-white 
-                             font-bold text-md uppercase px-8 py-4 overflow-hidden">Our Services</Link>
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Our Services</Link>
                         </div>
                     </div>
 
