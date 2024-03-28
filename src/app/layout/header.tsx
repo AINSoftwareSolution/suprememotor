@@ -3,10 +3,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from '../images/logo.png'
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../state/store";
+import { toggleModal } from "../state/slice";
 
 const Header: React.FC<{}> = () => {
     const [isActive, setIsActive] = useState<boolean>(false);
     const [collapse, setCollapse] = useState<boolean>(false)
+    const disaptch = useDispatch<AppDispatch>()
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -43,7 +47,10 @@ const Header: React.FC<{}> = () => {
 
                         </Link>
                         <div className="flex items-center lg:order-2">
-                            <Link href="#" className="text-white bg-red focus:ring-4 focus:ring-[#0000ff] font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">Book Apointment</Link>
+                            <button
+                                onClick={() => disaptch(toggleModal())}
+                                className="text-white bg-red  font-medium rounded-lg text-sm px-4 
+                            lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">Book Apointment</button>
                             <button data-collapse-toggle="mobile-menu-2" type="button"
                                 onClick={handleCollapse}
                                 className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden 

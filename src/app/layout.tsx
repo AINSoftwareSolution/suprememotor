@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import ScrollToTopButton from "./component/scrollToTop";
+import StoreProvider from "./storeProvider";
+import BookAppointment from "./component/bookApointment";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <ScrollToTopButton />
-        <Footer />
+        <StoreProvider>
+          <Header />
+          {children}
+          <ScrollToTopButton />
+          <Footer />
+          <BookAppointment />
+        </StoreProvider>
       </body>
     </html>
   );

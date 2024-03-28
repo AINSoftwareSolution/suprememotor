@@ -1,9 +1,15 @@
+"use client"
 import Link from "next/link"
 import Logo from '../images/logo.png'
 import Image from "next/image"
 import { services } from "../utilis/services"
+import { useDispatch } from "react-redux"
+import { AppDispatch } from "../state/store"
+import { toggleModal } from "../state/slice"
 
 const Footer = () => {
+    const disaptch = useDispatch<AppDispatch>()
+
     return (
         <footer className="bg-dark text-white px-6">
             <div className="container mx-auto max-w-screen-xl  py-6 lg:py-8">
@@ -39,7 +45,8 @@ const Footer = () => {
                         <div className="flex gap-4 mt-6 flex-wrap w-full">
                             <button
                                 className="inline-block border-none rounded-xl text-center bg-red text-white 
-                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Book Apointment</button>
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto"
+                             onClick={() => disaptch(toggleModal())}>Book Apointment</button>
                             <Link href="/contact"
                                 className="inline-block border border-white rounded-xl text-center text-white 
                              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Ask Queries</Link>

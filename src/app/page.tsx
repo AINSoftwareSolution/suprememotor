@@ -1,3 +1,4 @@
+"use client"
 import Banner from "./component/banner";
 import RecentWork from "./component/recentWork";
 import ServiceCard from "./component/servicecard";
@@ -75,11 +76,10 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-12">
-            <RecentWork />
+            {/* <RecentWork /> */}
           </div>
         </div>
       </div>
-
     </main>
   );
 }
