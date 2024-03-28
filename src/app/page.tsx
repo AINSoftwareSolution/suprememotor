@@ -1,4 +1,5 @@
 import Banner from "./component/banner";
+import RecentWork from "./component/recentWork";
 import ServiceCard from "./component/servicecard";
 import { services } from "./utilis/services";
 import { ServiceType } from "./utilis/type";
@@ -18,11 +19,11 @@ const Home = () => {
             </div>
             {/* Right column */}
             <div className="md:col-span-1">
-              <div className="">
-                <h6 className="sub-title">KNOW ABOUT US</h6>
-                <h4 className="title">Where Expertise Meets <br /> Every Engine</h4>
-              </div>
-              <ul className="list-disc leading-9 list-inside mt-4">
+              <h6 className="sub-title">KNOW ABOUT US</h6>
+              <h4 className="title">Where Expertise Meets <br /> Every Engine</h4>
+              <p className="my-4">Welcome to Supreme Motor Company!
+                A one-stop destination for all your car restoration and custom paint jobs at a very affordable price range in INDIA.</p>
+              <ul className="list-disc leading-9 list-inside">
                 <li>Cashless Insurance Claim</li>
                 <li>Hassle-Free Process</li>
                 <li>Quality Assurance</li>
@@ -33,13 +34,13 @@ const Home = () => {
         </div>
       </div>
 
-      {/* know about us */}
+      {/* services */}
       <div className="about-us px-6">
         <div className="container mx-auto max-w-screen-xl py-12">
           <div className="flex justify-center">
             <div className="text-center">
               <h6 className="sub-title sub-title-after style1">
-                KNOW ABOUT US
+                Our Services
               </h6>
               <h4 className="title">
                 Professional Car Repair The Best Services
@@ -57,6 +58,27 @@ const Home = () => {
         </div>
       </div>
 
+      {/* book apointment */}
+
+      {/* recent work */}
+
+      <div className="about-us px-6">
+        <div className="container mx-auto max-w-screen-xl py-12">
+          <div className="flex justify-center">
+            <div className="text-center">
+              <h6 className="sub-title sub-title-after style1">
+                Recent Work
+              </h6>
+              <h4 className="title">
+                Where Expertise Meets Every Project
+              </h4>
+            </div>
+          </div>
+          <div className="mt-12">
+            <RecentWork />
+          </div>
+        </div>
+      </div>
 
     </main>
   );

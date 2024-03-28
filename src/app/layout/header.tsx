@@ -10,6 +10,7 @@ const Header: React.FC<{}> = () => {
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
+            window.scrollTo(0, 0);
             const handleScroll = () => {
                 window.scrollY > 60 ? setIsActive(true) : setIsActive(false);
             };
