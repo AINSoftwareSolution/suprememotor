@@ -1,8 +1,11 @@
 "use client"
+import Image from "next/image";
 import Banner from "./component/banner";
 import ServiceCard from "./component/servicecard";
 import { services } from "./utilis/services";
 import { ServiceType } from "./utilis/type";
+import AboutUs from '../app/images/about.png'
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -14,7 +17,12 @@ const Home = () => {
         <div className="container mx-auto max-w-screen-xl py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left column */}
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 ">
+              <Image
+                src={AboutUs}
+                width={300} height={300}
+                alt='car services'
+                className="w-full h-full rounded border py-4" />
 
             </div>
             {/* Right column */}
@@ -22,13 +30,26 @@ const Home = () => {
               <h6 className="sub-title">KNOW ABOUT US</h6>
               <h4 className="title">Where Expertise Meets <br /> Every Engine</h4>
               <p className="my-4">Welcome to Supreme Motor Company!
-                A one-stop destination for all your car restoration and custom paint jobs at a very affordable price range in INDIA.</p>
+                A one-stop destination for all your car restoration and custom paint jobs at a
+                very affordable price range in INDIA.</p>
+
+              <p className="my-4">
+                We offer cashless insurance claims with almost all available companies in the market, which means,
+                you can easily drop off your car at our body-shop and let us take care of the rest.
+                We handle insurance claims with just as much attention and honesty as we handle our custom paint jobs.
+                We promise Grade-A material application and the best possible finish on your car.
+              </p>
               <ul className="list-disc leading-9 list-inside">
                 <li>Cashless Insurance Claim</li>
                 <li>Hassle-Free Process</li>
                 <li>Quality Assurance</li>
                 <li>Quick and Efficient Car Repairs</li>
               </ul>
+
+              <Link href='/contact' className="inline-block border-none rounded-xl text-center bg-red text-white 
+                             font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4">
+                Contact Us Now!
+              </Link>
             </div>
           </div>
         </div>

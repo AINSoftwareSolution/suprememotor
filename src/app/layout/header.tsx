@@ -6,10 +6,12 @@ import Logo from '../images/logo.png'
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../state/store";
 import { toggleModal } from "../state/slice";
+import { services } from "../utilis/services";
 
 const Header: React.FC<{}> = () => {
     const [isActive, setIsActive] = useState<boolean>(false);
     const [collapse, setCollapse] = useState<boolean>(false)
+    const [isDropDown, setIsDropDown] = useState<boolean>(false)
     const disaptch = useDispatch<AppDispatch>()
 
     useEffect(() => {
@@ -64,18 +66,43 @@ const Header: React.FC<{}> = () => {
                         <div className={`${!collapse ? 'hidden' : 'block bg-dark'} justify-between items-center w-full lg:flex lg:w-auto lg:order-1`} id="mobile-menu-2">
                             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                 {
-                                    [['/', 'Home'], ['/about-us', 'About'], ['/services', 'Services'], ['/contact', 'Contact'],]
+                                    [['/', 'Home'], ['/about-us', 'About'], ['/contact', 'Contact'],]
                                         .map(([url, title]) => (
                                             <li key={title}>
                                                 <Link
                                                     href={url}
-                                                    className="block py-2 pr-4 pl-3 t  border-b border-gray-100 hover:bg-gray-50 
+                                                    className="block py-2 pr-4 pl-3 t  border-b border-gray
                                                             lg:hover:bg-transparent lg:border-0 lg:hover:text-red lg:p-0">
                                                     {title}
                                                 </Link>
                                             </li>
                                         ))
                                 }
+
+                                <li>
+                                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                        onClick={() => setIsDropDown(!isDropDown)}
+                                        className="flex items-center justify-between block py-2 pr-4 pl-3 t  border-b border-gray
+                                        lg:hover:bg-transparent lg:border-0 lg:hover:text-red lg:p-0 relative">
+                                        Services
+                                        <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <div id="dropdownNavbar"
+                                        className={`${!isDropDown ? 'hidden' : 'block'} absolute 
+                                        z-10  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full md:w-44`}>
+                                        <ul className="py-2 text-sm text-dark" aria-labelledby="dropdownLargeButton">
+                                            {
+                                                services.map((service) => (
+                                                    <li>
+                                                        <Link href={service?.path} className="block px-4 py-2 hover:text-red font-medium">{service.title}</Link>
+                                                    </li>
+                                                ))
+                                            }
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>

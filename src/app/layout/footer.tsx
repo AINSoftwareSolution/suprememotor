@@ -23,11 +23,7 @@ const Footer = () => {
                                 width={150}
                                 height={150} />
                         </Link>
-                        <p className="my-4">
-                            Welcome to Supreme Motor Company, <br />your ultimate destination for<br />
-                            car restoration and custom paint jobs<br />
-                            in India! Located in Pune.
-                        </p>
+                       
                     </div>
                     <div>
                         <h2 className="mb-6 mt-6 md:mt-0 text-sm font-semibold uppercase sub-title">Services</h2>
@@ -35,7 +31,7 @@ const Footer = () => {
                             {
                                 services.map((service) => (
                                     <li className="mb-4" key={service?.title}>
-                                        <Link href="/" className="hover:underline">{service?.title}</Link>
+                                        <Link href={service?.path} className="hover:underline">{service?.title}</Link>
                                     </li>
                                 ))
                             }

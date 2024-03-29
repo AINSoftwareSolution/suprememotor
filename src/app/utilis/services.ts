@@ -17,32 +17,39 @@ export const services = [
   {
     "title": "Ceramic and Graphene coatings",
     "image": Ceramic,
-    "logo": CermaicLogo
+    "logo": CermaicLogo,
+    "path": '/services/ceramic-and-graphene-coatings'
   },
   {
     "title": "Paint protection films",
     "image": PaintProtection,
-    logo: PaintProtectionLogo
+    "logo": PaintProtectionLogo,
+    "path": '/services/paint-protection-films'
   },
   {
     "title": "Body-shop (Denting & Painting)",
     "image": BodyShop,
-    logo: BodyShopLogo
+    "logo": BodyShopLogo,
+    "path": '/services/body-shop'
+
   },
   {
     "title": "Detailing and Interior cleaning",
     "image": Detailing,
-    logo: DetailoingLogo
+    "logo": DetailoingLogo,
+    "path": '/services/detailing-and-interior-cleaning'
 
   },
   {
     "title": "Wrap Jobs",
     "image": Wrap,
-    logo: WarpLogo
+    "logo": WarpLogo,
+    "path": '/services/wrap-jobs'
   },
   {
     "title": "Interior Modifications",
     "image": Interior,
-    logo: InteriorModification
+    "logo": InteriorModification,
+    "path": '/services/interior-modifications'
   }
 ]

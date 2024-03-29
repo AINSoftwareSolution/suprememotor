@@ -4,22 +4,27 @@ import { FormData } from "../utilis/type";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../state/store";
 import { toggleModal } from "../state/slice";
+import SuccessAlert from "./successAlert";
 
 const BookAppointment: React.FC = () => {
     const isModalOpen = useSelector((state: RootState) => state.modalReducer.isModalOpen);
     const dispatch = useDispatch<AppDispatch>()
-
-    const [formData, setFormData] = useState<FormData>({
+    const initalData = {
         name: "",
         email: '',
         phone: ''
-    });
+    }
+
+    const [formData, setFormData] = useState<FormData>(initalData);
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted:", formData);
-        fetch('/', { method: 'POST', body: JSON.stringify(formData) }).then((res) => {
+        fetch('/api/submitForm', { method: 'POST', body: JSON.stringify(formData) }).then((res) => {
             console.log(res)
+            if (res.status === 200) {
+                setFormData(initalData)
+            }
         })
         dispatch(toggleModal())
     };
@@ -38,11 +43,11 @@ const BookAppointment: React.FC = () => {
                 <div id="crud-modal" className="fixed top-0 right-0 bottom-0 left-0 z-50 flex items-center justify-center bg-dark bg-opacity-70">
                     <div className="relative p-2 w-full max-w-md bg-white rounded-lg shadow">
                         <div className="flex items-center justify-between p-4 md:p-3 border-b rounded-t">
-                            <h3 className="text-lg font-semibold">
+                            <h3 className="text-lg font-semibold text-dark">
                                 Book Apointement
                             </h3>
                             <button
-                                className="text-gray bg-transparent hover:bg-gray hover rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                                className="text-gray bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
                                 onClick={() => dispatch(toggleModal())}
                             >
                                 <svg className="w-3 h-3" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +66,7 @@ const BookAppointment: React.FC = () => {
                                         id="name"
                                         value={formData.name}
                                         onChange={handleInputChange}
-                                        className=" border text-sm rounded-lg fous:outline-none block w-full p-2.5"
+                                        className="shadow-sm  border border-gray text-gray text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                         placeholder="Please enter your name..."
                                         required
                                     />
@@ -74,7 +79,7 @@ const BookAppointment: React.FC = () => {
                                         id="email"
                                         value={formData.email}
                                         onChange={handleInputChange}
-                                        className=" border text-sm rounded-lg fous:outline-none block w-full p-2.5"
+                                        className="shadow-sm  border border-gray text-gray text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                         placeholder="Please enter your email Id..."
                                         required
                                     />
@@ -87,7 +92,7 @@ const BookAppointment: React.FC = () => {
                                         id="phone"
                                         value={formData.phone}
                                         onChange={handleInputChange}
-                                        className=" border text-sm rounded-lg fous:outline-none block w-full p-2.5"
+                                        className="shadow-sm  border border-gray text-gray text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                         placeholder="Please enter your contact..."
                                         required
                                     />
