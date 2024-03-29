@@ -8,6 +8,7 @@ const RecentWork = () => {
                     "https://www.youtube.com/embed/-F6fdwh_T9c?si=cfVWYdWZ6ZFywDwD", "https://www.youtube.com/embed/GqWuHX81yv4?si=VxUvh6AUIUoGtQXg"
                 ].map((link) => (
                     <iframe
+                        key={link}
                         width="100%"
                         height="auto"
                         className="rounded-lg"
