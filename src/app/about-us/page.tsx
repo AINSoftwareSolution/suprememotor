@@ -52,7 +52,7 @@ const About = () => {
                     </div>
 
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 ">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 ">
                         {
                             benifits.map((benifit, index) => (
                                 <div className="p-6" key={index}>
@@ -64,7 +64,7 @@ const About = () => {
                                 </div>
                             ))
                         }
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
