@@ -22,8 +22,8 @@ const About = () => {
                     <h2 className="title ">One Stop For All Your Car Solutions</h2>
                     <p className="my-4">
                         Welcome to Supreme Motor Company, your ultimate destination for car restoration and custom paint jobs in
-                        India! Located in Pune, our workshop is equipped to provide top-notch services tailored to your car's needs.
-                        Whether it's a vintage restoration project or a modern custom paint job, we've got you covered.
+                        India! Located in Pune, our workshop is equipped to provide top-notch services tailored to your cars needs.
+                        Whether its a vintage restoration project or a modern custom paint job, we have got you covered.
                     </p>
 
                     <p>
@@ -52,7 +52,7 @@ const About = () => {
                     </div>
 
 
-                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 ">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center mt-8 ">
                         {
                             benifits.map((benifit, index) => (
                                 <div className="p-6" key={index}>
@@ -64,7 +64,7 @@ const About = () => {
                                 </div>
                             ))
                         }
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>

@@ -5,7 +5,7 @@ export const benifits = [
     },
     {
         "title": "Affordable Pricing",
-        "description": "We understand the value of your investment. That's why we offer competitive pricing without compromising on quality."
+        "description": "We understand the value of your investment. Thats why we offer competitive pricing without compromising on quality."
     },
     {
         "title": "Expert Team",
@@ -17,7 +17,7 @@ export const benifits = [
     },
     {
         "title": "Precise Color Matching",
-        "description": "We ensure precise color matching to maintain the integrity of your car's original look or bring your custom vision to life."
+        "description": "We ensure precise color matching to maintain the integrity of your cars original look or bring your custom vision to life."
     },
     {
         "title": "High-Quality Finishing",
