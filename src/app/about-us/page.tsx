@@ -28,7 +28,7 @@ const About = () => {
 
                     <p>
                         At Supreme Motor Company, we take pride in delivering top-notch services that exceed your expectations.
-                        Trust us for all your car service needs, and let's elevate your driving experience together
+                        Trust us for all your car service needs, and lets elevate your driving experience together
                     </p>
 
                     <Link href='/contact' className="inline-block border-none rounded-xl text-center bg-red text-white 
