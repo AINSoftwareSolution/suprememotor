@@ -1,64 +1,24 @@
-import Image from "next/image"
 
 const RecentWork = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="grid gap-4">
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"alt='Supreme Motor Company' />
-                </div>
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"alt='Supreme Motor Company' />
-                </div>
-            </div>
-            <div className="grid gap-4">
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"alt='Supreme Motor Company' />
-                </div>
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"alt='Supreme Motor Company' />
-                </div>
-            </div>
-            <div className="grid gap-4">
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"alt='Supreme Motor Company' />
-                </div>
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"alt='Supreme Motor Company' />
-                </div>
-            </div>
-            <div className="grid gap-4">
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"alt='Supreme Motor Company' />
-                </div>
-                <div>
-                    <Image 
-                    width={100} height={100}
-                    className="h-auto max-w-full rounded-lg" 
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"alt='Supreme Motor Company' />
-                </div>
-            </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {
+                ['https://www.youtube.com/embed/WZw1GvEFyyI?si=tDiqWrW1XiGgexKQ', "https://www.youtube.com/embed/SACE1Z-FDXA?si=MBFpCRfBoL4QYALY",
+                    "https://www.youtube.com/embed/Sf6Fg0Ew0Cc?si=sEB590dFhsQIbnaH", "https://www.youtube.com/embed/yZYvqyVtUk8?si=BFK0enK-YMlEbzGn",
+                    "https://www.youtube.com/embed/-F6fdwh_T9c?si=cfVWYdWZ6ZFywDwD", "https://www.youtube.com/embed/GqWuHX81yv4?si=VxUvh6AUIUoGtQXg"
+                ].map((link) => (
+                    <iframe
+                        width="100%"
+                        height="auto"
+                        className="rounded-lg"
+                        src={link}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+
+                ))
+            }
         </div>
     )
 }

@@ -6,6 +6,7 @@ import { services } from "./utilis/services";
 import { ServiceType } from "./utilis/type";
 import AboutUs from '../app/images/about.png'
 import Link from "next/link";
+import RecentWork from "./component/recentWork";
 
 const Home = () => {
   return (
@@ -79,6 +80,19 @@ const Home = () => {
 
       {/* book apointment */}
 
+      <div className="px-6 ">
+        <div className="container mx-auto max-w-screen-xl py-12">
+          <div className="bg-cover  CTA px-4 py-8 text-white rounded-xl">
+            <h6 className="text-3xl font-bold  uppercase mb-2">Explore Our YouTube Channel</h6>
+            <h4 className="text font-bold mb-4">Check out our latest videos to learn more about our services.</h4>
+            <a href="https://www.youtube.com/channel/UC03CDmnGrz3zpqPieKloz8Q" target="_blank"
+              className="inline-block border-none rounded-xl text-center bg-red text-white 
+              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4"> Watch Videos</a>
+          </div>
+        </div>
+      </div>
+
+
       {/* recent work */}
 
       <div className="about-us px-6">
@@ -94,7 +108,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-12">
-            {/* <RecentWork /> */}
+            <RecentWork />
           </div>
         </div>
       </div>

@@ -71,7 +71,7 @@ const Header: React.FC<{}> = () => {
                                             <li key={title}>
                                                 <Link
                                                     href={url}
-                                                    className="block py-2 pr-4 pl-3 t  border-b border-gray
+                                                    className="block py-2 pr-4 pl-3   border-b border-gray
                                                             lg:hover:bg-transparent lg:border-0 lg:hover:text-red lg:p-0">
                                                     {title}
                                                 </Link>
@@ -82,7 +82,7 @@ const Header: React.FC<{}> = () => {
                                 <li>
                                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
                                         onClick={() => setIsDropDown(!isDropDown)}
-                                        className="flex items-center justify-between block py-2 pr-4 pl-3 t  border-b border-gray
+                                        className="flex items-center justify-between block py-2 pr-4 pl-3  border-b border-gray
                                         lg:hover:bg-transparent lg:border-0 lg:hover:text-red lg:p-0 relative">
                                         Services
                                         <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
