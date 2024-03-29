@@ -2,6 +2,7 @@
 export interface ServiceType {
   title: string;
   image: any
+  logo:any
 }
 
 export interface PathType {

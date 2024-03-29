@@ -24,7 +24,6 @@ const Header: React.FC<{}> = () => {
             return () => {
                 window.removeEventListener("scroll", handleScroll);
             };
-
         }
     }, []);
 
@@ -35,7 +34,7 @@ const Header: React.FC<{}> = () => {
     return (
         <>
             <header>
-                <nav className={`border-gray-200 px-4 lg:px-6 py-2.5 fixed w-full z-10 transition-all text-white
+                <nav className={`border-gray-200  lg:px-6 py-2.5 fixed w-full z-10 transition-all text-white
                  ${isActive ? "bg-dark py-4 shadow-md" : "bg-none py-6"} `}>
                     <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                         <Link href="/" className="flex items-center">

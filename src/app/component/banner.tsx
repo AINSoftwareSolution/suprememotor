@@ -1,6 +1,5 @@
 
 import Image from 'next/image';
-import bannerImg from '../images/banner.png'
 import bannerShape from '../images/banner_shape.png'
 import Link from 'next/link';
 
@@ -31,14 +30,6 @@ const Banner = () => {
                              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Our Services</Link>
                         </div>
                     </div>
-
-                    {/* <div className="hero-thumb text-center">
-                        <Image
-                            className='w-full'
-                            src={bannerImg}
-                            alt="car services"
-                        />
-                    </div> */}
                 </div>
             </div>
         </div>

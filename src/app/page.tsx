@@ -1,6 +1,5 @@
 "use client"
 import Banner from "./component/banner";
-import RecentWork from "./component/recentWork";
 import ServiceCard from "./component/servicecard";
 import { services } from "./utilis/services";
 import { ServiceType } from "./utilis/type";
@@ -49,11 +48,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12">
+          <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-12">
             {services.map((service: ServiceType) => (
-              <div className="col-span-1 md:col-span-2 lg:col-span-1 mt-4" key={service?.title}>
-                <ServiceCard service={service} />
-              </div>
+              <ServiceCard service={service} key={service?.title} />
             ))}
           </div>
         </div>

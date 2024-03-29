@@ -23,6 +23,11 @@ const Footer = () => {
                                 width={150}
                                 height={150} />
                         </Link>
+                        <p className="my-4">
+                            Welcome to Supreme Motor Company, <br />your ultimate destination for<br />
+                            car restoration and custom paint jobs<br />
+                            in India! Located in Pune.
+                        </p>
                     </div>
                     <div>
                         <h2 className="mb-6 mt-6 md:mt-0 text-sm font-semibold uppercase sub-title">Services</h2>
@@ -46,7 +51,7 @@ const Footer = () => {
                             <button
                                 className="inline-block border-none rounded-xl text-center bg-red text-white 
                              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto"
-                             onClick={() => disaptch(toggleModal())}>Book Apointment</button>
+                                onClick={() => disaptch(toggleModal())}>Book Apointment</button>
                             <Link href="/contact"
                                 className="inline-block border border-white rounded-xl text-center text-white 
                              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto">Ask Queries</Link>
@@ -59,7 +64,7 @@ const Footer = () => {
                     <span className="text-sm text-gray-500 sm:text-center">© 2024 <Link href="/" className="hover:underline">Supreme Motor Company</Link>. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
-                        <Link href="#" className="text-gray-500 hover:text-red ">
+                        <Link href="https://www.facebook.com/suprememotorco/" className="text-gray-500 hover:text-red " target="_blank">
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
                                 <path fillRule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clipRule="evenodd" />
                             </svg>

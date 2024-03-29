@@ -6,7 +6,6 @@ const Services = () => {
         <>
             <Breadcrumb paths={[{ title: 'Services', url: '/services', disabled: true }]} title="Services" />
             <div>Services</div>
-            
         </>
     )
 }
