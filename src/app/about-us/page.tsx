@@ -17,13 +17,13 @@ const About = () => {
                         src={about1}
                         width={200}
                         height={200}
-                        alt="paint-protection  films" />
+                        alt="car repair services" />
                     <Image
                         className="w-full rounded-lg"
                         src={about2}
                         width={200}
                         height={200}
-                        alt="car interior" />
+                        alt="paint on car" />
                 </div>
                 <div className="font-light sm:text-lg">
                     <h2 className="title ">One Stop For All Your Car Solutions</h2>
@@ -49,12 +49,12 @@ const About = () => {
                 <div className="container mx-auto max-w-screen-xl py-12">
                     <div className="flex justify-center">
                         <div className="text-center">
-                            <h6 className="sub-title sub-title-after style1">
+                            <h2 className="sub-title sub-title-after style1">
                                 Benifits
-                            </h6>
-                            <h4 className="title">
+                            </h2>
+                            <h1 className="title">
                                 Why choose Supreme Motor Company?
-                            </h4>
+                            </h1>
                         </div>
                     </div>
 

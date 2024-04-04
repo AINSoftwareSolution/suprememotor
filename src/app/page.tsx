@@ -28,8 +28,8 @@ const Home = () => {
             </div>
             {/* Right column */}
             <div className="md:col-span-1">
-              <h6 className="sub-title">KNOW ABOUT US</h6>
-              <h4 className="title">Where Expertise Meets <br /> Every Engine</h4>
+              <h2 className="sub-title">KNOW ABOUT US</h2>
+              <h1 className="title">Where Expertise Meets <br /> Every Engine</h1>
               <p className="my-4">Welcome to Supreme Motor Company!
                 A one-stop destination for all your car restoration and custom paint jobs at a
                 very affordable price range in INDIA.</p>
@@ -61,12 +61,12 @@ const Home = () => {
         <div className="container mx-auto max-w-screen-xl py-12">
           <div className="flex justify-center">
             <div className="text-center">
-              <h6 className="sub-title sub-title-after style1">
+              <h2 className="sub-title sub-title-after style1">
                 Our Services
-              </h6>
-              <h4 className="title">
+              </h2>
+              <h1 className="title">
                 Professional Car Repair The Best Services
-              </h4>
+              </h1>
             </div>
           </div>
 
@@ -99,12 +99,12 @@ const Home = () => {
         <div className="container mx-auto max-w-screen-xl py-12">
           <div className="flex justify-center">
             <div className="text-center">
-              <h6 className="sub-title sub-title-after style1">
+              <h2 className="sub-title sub-title-after style1">
                 Recent Work
-              </h6>
-              <h4 className="title">
+              </h2>
+              <h1 className="title">
                 Where Expertise Meets Every Project
-              </h4>
+              </h1>
             </div>
           </div>
           <div className="mt-12">

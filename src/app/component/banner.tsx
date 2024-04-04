@@ -16,7 +16,7 @@ const Banner = () => {
                                         width={200}
                                         height={200}
                                         src={bannerShape}
-                                        alt="supereme motor"
+                                        alt=" a car body shop"
                                     />
                                 </span>
                             </span> {" "}
