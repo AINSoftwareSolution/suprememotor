@@ -17,3 +17,9 @@ export interface FormData {
   email: string
   phone: string
 }
+
+export interface contactData {
+  email: string,
+  subject: string,
+  message: string
+}

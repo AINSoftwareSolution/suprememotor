@@ -1,7 +1,36 @@
+'use client'
+import { ChangeEvent, FormEvent, useState } from "react";
 import Breadcrumb from "../component/breadCrumb"
+import { contactData } from "../utilis/type";
 
 
 const Contact = () => {
+    const initalData = {
+        email: '',
+        subject: '',
+        message: ''
+    }
+    const [formData, setFormData] = useState<contactData>(initalData);
+
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log("Form submitted:", formData);
+        fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) }).then((res) => {
+            console.log(res)
+            if (res.status == 200) {
+                console.log('s')
+                setFormData(initalData)
+            }
+        })
+    };
+
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
     return (
         <>
             <Breadcrumb paths={[{ title: 'Contact', url: '/contact', disabled: true }]} title="Contact" />
@@ -15,25 +44,34 @@ const Contact = () => {
                         className="w-full h-full"
                     />
 
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                         <p className="sub-title">Contact Us for Expert Car Services</p>
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-medium ">Your email</label>
-                            <input type="email" id="email" className="shadow-sm  border border-gray text-gray text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@supreme.com" required />
+                            <input type="email" id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                className="shadow-sm  border border-gray text-gray text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="name@supreme.com" required />
                         </div>
                         <div>
                             <label htmlFor="subject" className="block mb-2 text-sm font-medium">Subject</label>
-                            <input type="text" id="subject" className="block p-3 w-full text-sm text-gray  rounded-lg border border-gray shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how we can help you" required />
+                            <input type="text" id="subject"
+                                name="subject"
+                                value={formData.subject}
+                                onChange={handleInputChange}
+                                className="block p-3 w-full text-sm text-gray  rounded-lg border border-gray shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Let us know how we can help you" required />
                         </div>
                         <div className="sm:col-span-2">
                             <label htmlFor="message" className="block mb-2 text-sm font-medium">Your message</label>
-                            <textarea id="message" rows={6}
+                            <textarea id="message" rows={6} name="message"
+                                onChange={handleInputChange}
+                                value={formData.message}
                                 className="block p-2.5 w-full text-sm text-gray  rounded-lg shadow-sm border border-gray focus:ring-primary-500 focus:border-primary-500 " placeholder="Leave a comment..."></textarea>
                         </div>
                         <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red sm:w-fit focus:outline-none">Send message</button>
                     </form>
                 </div>
-
             </div>
         </>
     )
