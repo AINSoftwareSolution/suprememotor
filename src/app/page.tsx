@@ -30,17 +30,17 @@ const Home = () => {
             <div className="md:col-span-1">
               <h2 className="sub-title">KNOW ABOUT US</h2>
               <h1 className="title">Where Expertise Meets <br /> Every Engine</h1>
-              <p className="my-4">Welcome to Supreme Motor Company!
+              <p className="my-4 text-gray ">Welcome to Supreme Motor Company!
                 A one-stop destination for all your car restoration and custom paint jobs at a
                 very affordable price range in INDIA.</p>
 
-              <p className="my-4">
+              <p className="my-4 text-gray">
                 We offer cashless insurance claims with almost all available companies in the market, which means,
                 you can easily drop off your car at our body-shop and let us take care of the rest.
                 We handle insurance claims with just as much attention and honesty as we handle our custom paint jobs.
                 We promise Grade-A material application and the best possible finish on your car.
               </p>
-              <ul className="list-disc leading-9 list-inside">
+              <ul className="list-disc leading-9 list-inside text-gray font-[600]">
                 <li>Cashless Insurance Claim</li>
                 <li>Hassle-Free Process</li>
                 <li>Quality Assurance</li>

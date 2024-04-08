@@ -1,9 +1,21 @@
 
-export interface ServiceType {
+export type ServiceKeyPoint = {
   title: string;
-  image: any
-  logo:any
-  path:string
+  description: string;
+}
+
+export type Image = {
+  src: string;
+  alt: string;
+}
+
+export type ServiceType = {
+  title: string;
+  image: string;
+  logo: string;
+  path: string;
+  keyPoints: ServiceKeyPoint[];
+  description: string;
 }
 
 export interface PathType {
