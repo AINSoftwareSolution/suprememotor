@@ -22,7 +22,10 @@ const PaintProtectionFilms = () => {
                 <p>
                   <b> Protection Against Damage:</b>
                   <br></br>
-                  PPF provides a protective layer over the vehicle's paint, shielding it from various forms of damage such as stone chips, scratches, bug splatter, bird droppings, and other environmental contaminants.
+                  PPF provides a protective layer over the vehicles paint,
+                  shielding it from various forms of damage such as stone chips,
+                  scratches, bug splatter, bird droppings, and other
+                  environmental contaminants.
                 </p>
               </div>
 
@@ -33,7 +36,9 @@ const PaintProtectionFilms = () => {
                 <p>
                   <b> Transparent and Invisible:</b>
                   <br></br>
-                  Modern PPFs are designed to be transparent and virtually invisible, preserving the original appearance of the vehicle's paint while providing protection.
+                  Modern PPFs are designed to be transparent and virtually
+                  invisible, preserving the original appearance of the vehicles
+                  paint while providing protection.
                 </p>
               </div>
 
@@ -44,7 +49,9 @@ const PaintProtectionFilms = () => {
                 <p>
                   <b>Self-Healing Properties:</b>
                   <br></br>
-                  Some high-quality PPFs come with self-healing properties, meaning that minor scratches and swirl marks on the film can disappear over time with exposure to heat.
+                  Some high-quality PPFs come with self-healing properties,
+                  meaning that minor scratches and swirl marks on the film can
+                  disappear over time with exposure to heat.
                 </p>
               </div>
 
@@ -56,7 +63,9 @@ const PaintProtectionFilms = () => {
                 <p>
                   <b> Easy Maintenance:</b>
                   <br></br>
-                  PPFs are easy to clean and maintain, requiring only regular washing with mild soap and water to keep the vehicle looking its best.
+                  PPFs are easy to clean and maintain, requiring only regular
+                  washing with mild soap and water to keep the vehicle looking
+                  its best.
                 </p>
               </div>
             </div>
@@ -73,11 +82,11 @@ const PaintProtectionFilms = () => {
                 equipped with the latest tools and techniques to transform your
                 vehicle: Paint Correction: Say goodbye to swirls, scratches, and
                 imperfections. Our detailing service includes precision paint
-                correction, restoring the luster and brilliance of your
-                vehicles exterior. Deep Cleaning: We do not just clean; we
-                rejuvenate. Our detailing process involves thorough cleaning of
-                every nook and cranny, ensuring that dirt, grime, and
-                contaminants are banished from every inch of your vehicle.
+                correction, restoring the luster and brilliance of your vehicles
+                exterior. Deep Cleaning: We do not just clean; we rejuvenate.
+                Our detailing process involves thorough cleaning of every nook
+                and cranny, ensuring that dirt, grime, and contaminants are
+                banished from every inch of your vehicle.
               </p>
               <br></br>
               <button className="bg-red px-4 py-2 hover:bg-red text-white text-md lowecase tracking-widest-  hover:text-blue font-bold rounded object">

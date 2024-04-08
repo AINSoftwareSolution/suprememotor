@@ -89,11 +89,11 @@ const DetailingAndInteriorCleaning = () => {
                 equipped with the latest tools and techniques to transform your
                 vehicle: Paint Correction: Say goodbye to swirls, scratches, and
                 imperfections. Our detailing service includes precision paint
-                correction, restoring the luster and brilliance of your
-                vehicle's exterior. Deep Cleaning: We do not just clean; we
-                rejuvenate. Our detailing process involves thorough cleaning of
-                every nook and cranny, ensuring that dirt, grime, and
-                contaminants are banished from every inch of your vehicle.
+                correction, restoring the luster and brilliance of your vehicles
+                exterior. Deep Cleaning: We do not just clean; we rejuvenate.
+                Our detailing process involves thorough cleaning of every nook
+                and cranny, ensuring that dirt, grime, and contaminants are
+                banished from every inch of your vehicle.
               </p>
               <br></br>
               <button className="bg-red px-4 py-2 hover:bg-red text-white text-md lowecase tracking-widest-  hover:text-blue font-bold rounded object">

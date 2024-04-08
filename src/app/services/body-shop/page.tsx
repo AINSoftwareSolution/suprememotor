@@ -14,9 +14,9 @@ const BodyShop = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="shadow-none p-4 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  <b>1</b>
-                </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <b>1</b>
+              </span>
               <p>
                 <b>Quality Materials:</b>
                 <br></br>
@@ -26,9 +26,9 @@ const BodyShop = () => {
             </div>
 
             <div className="shadow-none p-4 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  <b>2</b>
-                </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <b>2</b>
+              </span>
               <p>
                 <b>Skilled Technicians:</b>
                 <br></br>
@@ -38,9 +38,9 @@ const BodyShop = () => {
             </div>
 
             <div className="shadow-none p-4 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  <b>3</b>
-                </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <b>3</b>
+              </span>
               <p>
                 <b>Advanced Equipment:</b> <br></br>
                 Check if the body shop has modern equipment and tools for dent
@@ -50,9 +50,9 @@ const BodyShop = () => {
             </div>
 
             <div className="shadow-none p-4 text-center">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                  <b>4</b>
-                </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <b>4</b>
+              </span>
               <p>
                 <b>Color Matching:</b> <br></br>
                 The body shop should be capable of accurately matching the paint
@@ -65,19 +65,19 @@ const BodyShop = () => {
             <p>
               Supreme Motor Company, where precision meets perfection in our
               state-of-the-art Body Shop. Our expert team of technicians is
-              dedicated to restoring your vehicle's beauty and structural
+              dedicated to restoring your vehicles beauty and structural
               integrity with our top-notch Denting and Painting services. Trust
               us to bring your vehicle back to its original glory and beyond.
               Denting Services: Precision and Expertise At Supreme Motor
               Company, we understand that even the smallest dents can be a
               source of frustration. Our skilled technicians utilize the latest
               techniques and tools to ensure flawless dent repair: Precision
-              Dent Removal: Whether it's a minor door ding or a more significant
+              Dent Removal: Whether its a minor door ding or a more significant
               dent, our technicians employ advanced dent removal methods to
-              restore your vehicle's body panels to their original condition
-              with precision and care. Paintless Dent Repair (PDR): In cases
-              where the paint is undamaged, we offer Paintless Dent Repair. This
-              technique preserves your vehicle's factory finish.
+              restore your vehicles body panels to their original condition with
+              precision and care. Paintless Dent Repair (PDR): In cases where
+              the paint is undamaged, we offer Paintless Dent Repair. This
+              technique preserves your vehicles factory finish.
             </p>
 
             <br></br>
