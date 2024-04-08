@@ -26,7 +26,7 @@ const WrapJobs = () => {
                       <br></br>
                       Vehicle wraps offer the ability to change the color of a
                       vehicle without the need for paint. This allows for
-                      customization and personalization according to the owner's
+                      customization and personalization according to the owner
                       preferences.
                     </p>
                   </div>
@@ -38,7 +38,7 @@ const WrapJobs = () => {
                     <p>
                       <b> Protection:</b>
                       <br></br>
-                      Wraps provide a protective layer over the vehicle's
+                      Wraps provide a protective layer over the vehicle
                       original paint, shielding it from minor scratches, stone
                       chips, and other surface damage. They can also protect
                       against UV rays, which can cause paint fading and
@@ -88,7 +88,7 @@ const WrapJobs = () => {
                     Company, we understand that your vehicle is an extension of
                     your personality. Our Wrap Jobs service allows you to
                     express your individuality and make a bold statement with a
-                    customized vehicle wrap. Whether you're looking for a sleek
+                    customized vehicle wrap. Whether you are looking for a sleek
                     matte finish, a vibrant color change, or a custom graphic
                     design, we have the expertise to bring your vision to life.
                   </p>

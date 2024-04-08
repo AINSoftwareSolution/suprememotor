@@ -22,7 +22,7 @@ const PaintProtectionFilms = () => {
                 <p>
                   <b> Protection Against Damage:</b>
                   <br></br>
-                  PPF provides a protective layer over the vehicle's paint, shielding it from various forms of damage such as stone chips, scratches, bug splatter, bird droppings, and other environmental contaminants
+                  PPF provides a protective layer over the vehicle's paint, shielding it from various forms of damage such as stone chips, scratches, bug splatter, bird droppings, and other environmental contaminants.
                 </p>
               </div>
 
@@ -74,7 +74,7 @@ const PaintProtectionFilms = () => {
                 vehicle: Paint Correction: Say goodbye to swirls, scratches, and
                 imperfections. Our detailing service includes precision paint
                 correction, restoring the luster and brilliance of your
-                vehicle's exterior. Deep Cleaning: We don't just clean; we
+                vehicles exterior. Deep Cleaning: We do not just clean; we
                 rejuvenate. Our detailing process involves thorough cleaning of
                 every nook and cranny, ensuring that dirt, grime, and
                 contaminants are banished from every inch of your vehicle.

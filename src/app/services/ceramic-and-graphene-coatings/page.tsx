@@ -64,19 +64,19 @@ const CeramicandGrapheneCoating = () => {
             <p>
               Ceramic Coatings: Unrivaled Protection, Lasting Brilliance Our
               Ceramic Coatings service offers a revolutionary way to shield your
-              vehicle's exterior from the harsh elements of the road. The
+              vehicles exterior from the harsh elements of the road. The
               nano-ceramic technology forms a durable and transparent layer over
-              your car's paint, providing: 1. Ultimate Protection: Resist
+              your cars paint, providing: 1. Ultimate Protection: Resist
               scratches, stone chips, bird droppings, tree sap, and harsh
               weather conditions. Our Ceramic Coating creates a robust barrier
-              against external contaminants, ensuring your vehicle's paint
+              against external contaminants, ensuring your vehicles paint
               remains in pristine condition 2. Enhanced Gloss: Enjoy a
               showroom-quality shine that lasts. The Ceramic Coating enhances
-              the depth and richness of your vehicle's. 3.Easy Maintenance: Say
+              the depth and richness of your vehicles. 3.Easy Maintenance: Say
               goodbye to frequent waxing. and our coating offers: 1. Heat
-              Resistance: Graphene's exceptional thermal conductivity ensures
-              superior heat resistance. Shield your vehicle's surface from the
-              sun's intense rays, preventing paint fade and damage over time.
+              Resistance: Graphenes exceptional thermal conductivity ensures
+              superior heat resistance. Shield your vehicles surface from the
+              suns intense rays, preventing paint fade and damage over time.
             </p>
 
             <br></br>
