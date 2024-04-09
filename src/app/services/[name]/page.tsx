@@ -4,10 +4,12 @@ import { toggleModal } from "@/app/state/slice";
 import { services } from "@/app/utilis/services"
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../state/store";
 
-const serviceDetails = ({ params }: { params: { name: string } }) => {
-    const dispatch = useDispatch()
-    const router = useRouter()
+
+const ServiceDetails = ({ params }: { params: { name: string } }) => {
+    const dispatch = useDispatch<AppDispatch>();
+    const router = useRouter();
     const matchedService = services.find(service => service.path.split('/').pop() === params.name);
 
     console.log(matchedService)
@@ -46,13 +48,14 @@ const serviceDetails = ({ params }: { params: { name: string } }) => {
                         <button
                             onClick={() => dispatch(toggleModal())}
                             className="inline-block border-none rounded-xl text-center bg-red text-white 
-                font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4">Book Apointment</button>
+                font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4">Book Appointment</button>
                     </div>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default serviceDetails
+export default ServiceDetails;  
+
 

@@ -71,7 +71,7 @@ const Home = () => {
           </div>
 
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-12">
-            {services.map((service: ServiceType) => (
+            {services?.map((service: ServiceType) => (
               <ServiceCard service={service} key={service?.title} />
             ))}
           </div>

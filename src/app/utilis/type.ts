@@ -7,14 +7,16 @@ export type ServiceKeyPoint = {
 export type Image = {
   src: string;
   alt: string;
+  height: number | string;
+  width: number | string
 }
 
 export type ServiceType = {
   title: string;
-  image: string;
-  logo: string;
+  image: any;
+  logo: any;
   path: string;
-  keyPoints: ServiceKeyPoint[];
+  keyPoint: ServiceKeyPoint[];
   description: string;
 }
 
