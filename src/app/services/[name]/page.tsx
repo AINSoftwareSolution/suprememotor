@@ -12,7 +12,6 @@ const ServiceDetails = ({ params }: { params: { name: string } }) => {
     const router = useRouter();
     const matchedService = services.find(service => service.path.split('/').pop() === params.name);
 
-    console.log(matchedService)
     if (!matchedService) {
         if (typeof window !== 'undefined') {
             router.push('/404');
@@ -56,6 +55,6 @@ const ServiceDetails = ({ params }: { params: { name: string } }) => {
     );
 };
 
-export default ServiceDetails;  
+export default ServiceDetails;
 
 

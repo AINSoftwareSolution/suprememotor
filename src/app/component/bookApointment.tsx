@@ -19,9 +19,7 @@ const BookAppointment: React.FC = () => {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
         fetch('/api/submitForm', { method: 'POST', body: JSON.stringify(formData) }).then((res) => {
-            console.log(res)
             if (res.status === 200) {
                 setFormData(initalData)
             }
