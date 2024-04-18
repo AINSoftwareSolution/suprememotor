@@ -11,12 +11,17 @@ const Contact = () => {
         message: ''
     }
     const [formData, setFormData] = useState<contactData>(initalData);
+    const [message, setmessage] = useState<string>('')
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) }).then((res) => {
-            if (res.status == 200) {
+            console.log(message)
+            if (res.status == 201) {
+                setmessage('Thank you for contacting us!')
                 setFormData(initalData)
+            } else {
+                setmessage('Something Went wrong! Try Again!')
             }
         })
     };
@@ -66,6 +71,7 @@ const Contact = () => {
                                 value={formData.message}
                                 className="block p-2.5 w-full text-sm text-gray  rounded-lg shadow-sm border border-gray focus:ring-primary-500 focus:border-primary-500 " placeholder="Leave a comment..."></textarea>
                         </div>
+                        <p className="text-gray">{message}</p>
                         <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red sm:w-fit focus:outline-none">Send message</button>
                     </form>
                 </div>

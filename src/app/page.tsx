@@ -85,9 +85,9 @@ const Home = () => {
           <div className="bg-cover  CTA px-4 py-8 text-white rounded-xl">
             <h6 className="text-3xl font-bold  uppercase mb-2">Explore Our YouTube Channel</h6>
             <h4 className="text font-bold mb-4">Check out our latest videos to learn more about our services.</h4>
-            <a href="https://www.youtube.com/channel/UC03CDmnGrz3zpqPieKloz8Q" target="_blank"
+            <Link href="https://www.youtube.com/channel/UC03CDmnGrz3zpqPieKloz8Q" target="_blank"
               className="inline-block border-none rounded-xl text-center bg-red text-white 
-              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4"> Watch Videos</a>
+              font-bold text-md uppercase px-8 py-4 overflow-hidden w-full md:w-auto my-4"> Watch Videos</Link>
           </div>
         </div>
       </div>
