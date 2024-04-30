@@ -30,6 +30,7 @@ export default function RootLayout({
           href="https://suprememotor.in/services"
           key="canonical"
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <StoreProvider>
