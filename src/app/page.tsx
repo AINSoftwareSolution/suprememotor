@@ -22,7 +22,7 @@ const Home = () => {
               <Image
                 src={AboutUs}
                 width={300} height={300}
-                alt='car services'
+                alt='car services in pune'
                 className="w-full h-full rounded border py-4" />
 
             </div>

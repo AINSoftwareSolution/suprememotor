@@ -42,7 +42,7 @@ const Header: React.FC<{}> = () => {
                         <Link href="/" className="flex items-center">
                             <Image src={Logo}
                                 className="mr-3"
-                                alt="full service car wash near me"
+                                alt="car repair in pune"
                                 width={100}
                                 height={100} />
 
