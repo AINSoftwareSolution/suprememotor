@@ -2,7 +2,13 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import Breadcrumb from "../component/breadCrumb"
 import { contactData } from "../utilis/type";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Supreme Motor Company - car mechanic in pune",
+    keywords: ' , car repair in pune , car garage in pune , automative shop in pune,  service, car,paint, jobs, interior, isurance, body-shop, custom paint, book apointment, experties meet, paint jobs, cashless insurace',
+    description: "Welcome to Supreme Motor Company, your ultimate destination for car restoration and custom paint jobs in India",
+  };
 
 const Contact = () => {
     const initalData = {
