@@ -111,6 +111,7 @@ const Home = () => {
             <div className="text-center">
               <h2 className="sub-title sub-title-after style1">Our Services</h2>
               <h1 className="title">
+                
                 Professional Car Repair The Best Services
               </h1>
             </div>
@@ -125,54 +126,49 @@ const Home = () => {
       </div>
 
       {/* Why Choose Us Section */}
-
-      <div className="container mx-auto max-w-screen-xl py-12">
+      <div className="bg-[#f8f8f8]">
+      <div className="container mx-auto max-w-screen-xl py-12 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="md:col-span-1">
             {/* Left column */}
-            <h2 className="sub-title">car mechanic</h2>
+            <h2 className="sub-title">car mechanic in Pune</h2>
             <h1 className="title">Make your car feel like a brand new one</h1>
             <p className="text-[#596277]">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, a.
-              Inventore iure ad mollitia fugit neque itaque adipisci repellat
-              dicta cumque tempore? Veniam incidunt nisi optio eaque mollitia!
-              Sunt, reiciendis?
+            Harnessing years of expertise and a commitment to excellence, we pride ourselves on delivering unparalleled quality and customer satisfaction in every aspect of our service.
             </p>
-
             <div className="flex mt-3">
               <div className="w-1/3 px-2">
-                <div className="bg-red rounded-lg mt-4 p-4">
+                <div className="bg-red text-white rounded-lg mt-4 p-4">
                   <span className="l-img">
                     <Image src={Support} width={80} height={80} alt="" />
                   </span>
-
                   <h3 className="text-lg font-bold mt-4">Best Support</h3>
                   <p className="mt-0">
-                    Lorem Ipsum is simply dummy text of the printing
+                  Experience unparalleled peace of mind with our Best Support services.
                   </p>
                 </div>
               </div>
 
-              <div className="w-1/3 px-2">
-                <div className="bg-red rounded-md mt-4 p-4">
+              <div className="w-1/3 ">
+                <div className="bg-dark text-white rounded-xl mt-4 p-4">
                   <span className="2-img">
                     <Image src={CMS} width={80} height={80} alt="" />
                   </span>
 
                   <h3 className="text-lg font-bold mt-4">Best CSM</h3>
                   <p className="mt-0">
-                    Lorem Ipsum is simply dummy text of the printing
+                  Discover the power of our Best CMS solution, designed to revolutionize your digital presence.
                   </p>
                 </div>
               </div>
               <div className="w-1/3 px-2">
-                <div className="bg-red  rounded-lg mt-4 p-4">
+                <div className="bg-red text-white rounded-lg mt-4 p-4">
                   <span className="3-img">
                     <Image src={Solution} width={80} height={80} alt="" />
                   </span>
                   <h3 className="text-lg font-bold mt-4">Best Solution</h3>
                   <p className="mt-0">
-                    Lorem Ipsum is simply dummy text of the printing
+                  the potential of innovation with our Best Solution, Best solution offers a holistic approach.
                   </p>
                 </div>
               </div>
@@ -188,6 +184,7 @@ const Home = () => {
             />
           </div>
         </div>
+      </div>
       </div>
 
       {/* book apointment */}

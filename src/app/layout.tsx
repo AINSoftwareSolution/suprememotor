@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -12,9 +12,12 @@ import BookAppointment from "./component/bookApointment";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Supreme Motor Company - Car repair in Pune",
-  keywords: 'car mechanic in pune , car repair in pune , car garage in pune , automative shop in pune,  service, car,paint, jobs, interior, isurance, body-shop, custom paint, book apointment, experties meet, paint jobs, cashless insurace',
-  description: "Welcome to Supreme Motor Company, your ultimate destination for car restoration and custom paint jobs in India",
+  title:
+    "Supreme Motor Company - Car Repair and Mechanic Services in Pune, India",
+  keywords:
+    "car mechanic near me, car repair near me, car mechanic in pune, car repair services in pune, auto shop near me, mechanic shop near me, service, car, paint, jobs, interior, insurance, body shop, custom paint, book appointment, expertise meet, paint jobs, car repair shop near me, cashless insurance",
+  description:
+    "Welcome to Supreme Motor Company, your ultimate destination for car restoration and custom paint jobs in Pune, India. We offer Ceranic and Graphene coating, Paint Protection Films, Body-shop(Denting and painting), Detaking and Interior Cleaning, Wrap jobs and Interior Modification.",
 };
 
 export default function RootLayout({
