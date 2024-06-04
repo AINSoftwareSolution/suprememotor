@@ -43,7 +43,7 @@ body {
 }
 
 .bg-animate {
-  animation: bg-anim 5s linear infinite;
+  animation: bg-anim 2s ease-out infinite;
 }
 
 @layer utilities {

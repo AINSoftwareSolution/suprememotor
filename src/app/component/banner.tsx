@@ -14,8 +14,8 @@ const Banner = () => {
                 Car Solutions
                 <span className="inline-block absolute top-0 left-1/4 transform -translate-x-1/2 translate-y-1/2 bg-animate z-[-1]">
                   <Image
-                    width={200}
-                    height={200}
+                    width={1000}
+                    height={300}
                     src={bannerShape}
                     alt=" a car body shop"
                   />
