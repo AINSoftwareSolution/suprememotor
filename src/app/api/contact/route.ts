@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     await connectMongoDB();
     await ContactModal.create(res);
     return NextResponse.json(
-      { message: `Thank You for contacting!` },
+      { message: `Thank You for contacting!` , status: 201 },
       { status: 201 }
     );
   } catch (error) {

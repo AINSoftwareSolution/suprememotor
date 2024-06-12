@@ -43,7 +43,7 @@ const About = () => {
             At Supreme Motor Company, Our extensive range of services includes
             professional denting and painting of cars in Pune. We use advanced
             techniques and high-quality materials to restore your car
-            appearance, making it look as good as new. Whether it's minor dents
+            appearance, making it look as good as new. Whether it&apos;s minor dents
             or major bodywork, our team has you covered.
           </p>
 
