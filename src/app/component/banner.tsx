@@ -1,10 +1,13 @@
-import Image from "next/image";
-import bannerShape from "../images/banner_shape.png";
+
 import Link from "next/link";
 
 const Banner = () => {
   return (
     <div className="hero-wrapper bg-cover bg-top pt-28 text-white px-4 lg:px-6 relative">
+      <video autoPlay loop muted>
+        <source src="/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="container mx-auto max-w-screen-xl">
         <div className="flex justify-center text-center">
           <div className="hero-style1 py-24 relative">
@@ -13,12 +16,12 @@ const Banner = () => {
               <span className="relative z-[1]">
                 Car Solutions
                 <span className="inline-block absolute top-0 left-1/4 transform -translate-x-1/2 translate-y-1/2 bg-animate z-[-1]">
-                  <Image
+                  {/* <Image
                     width={1000}
                     height={300}
                     src={bannerShape}
                     alt=" a car body shop"
-                  />
+                  /> */}
                 </span>
               </span>{" "}
             </h1>
