@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
 import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+
 import "./globals.css";
+
 import Header from "./layout/header";
 import Footer from "./layout/footer";
 import ScrollToTopButton from "./layout/scrollToTop";
 import StoreProvider from "./storeProvider";
-import BookAppointment from "./component/bookApointment";
+import { BookAppointment } from "./component";
 
 const inter = Inter({ subsets: ["latin"] });
 

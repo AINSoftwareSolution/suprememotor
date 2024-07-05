@@ -59,10 +59,10 @@ body {
   min-height: auto;
   position: relative;
   z-index: 2;
-  /* background-image: url('../app/images/banner-bg.png'); */
+  background-image: url('../app/images/banner-bg.png');
 }
 
-.hero-wrapper video {
+/* .hero-wrapper video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,7 +71,7 @@ body {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
-}
+} */
 
 
 footer {

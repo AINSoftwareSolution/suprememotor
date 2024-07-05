@@ -3,7 +3,11 @@ import Solution from "./solutionImg.png";
 import CMS from "./cmsImg.png";
 import WhyChoose from "./rightsideImg.png";
 import AboutUs from "./about.png";
+import about1 from "../images/about.png";
+import about2 from "../images/6-1.png";
 import IncImg from "./IncImg.jpg";
+import Logo from '../images/logo.png'
+
 
 import Ceramic from "./ceramic and graphene coating.png";
 import PaintProtection from "./paint protection films.png";
@@ -25,6 +29,8 @@ export {
   Solution,
   CMS,
   WhyChoose,
+  about1,
+  about2,
   AboutUs,
   IncImg,
   Ceramic,
@@ -39,4 +45,5 @@ export {
   DetailoingLogo,
   WarpLogo,
   InteriorModification,
+  Logo
 };

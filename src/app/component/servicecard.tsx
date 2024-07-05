@@ -1,7 +1,8 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { ServiceType } from "../utilis/type"
 import { useState } from "react"
+import { ServiceType } from "../utilis/type"
 
 const ServiceCard: React.FC<{ service: ServiceType }> = ({ service }) => {
     const { title, logo, path , description } = service

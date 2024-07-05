@@ -1,10 +1,10 @@
 "use client"
-import React, { useState, ChangeEvent, FormEvent } from "react";
-import { FormData } from "../utilis/type";
 import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../state/store";
+import React, { useState, ChangeEvent, FormEvent } from "react";
+
+import { FormData } from "../utilis/type";
 import { toggleModal } from "../state/slice";
-import SuccessAlert from "./successAlert";
+import { AppDispatch, RootState } from "../state/store";
 
 const BookAppointment: React.FC = () => {
     const isModalOpen = useSelector((state: RootState) => state.modalReducer.isModalOpen);

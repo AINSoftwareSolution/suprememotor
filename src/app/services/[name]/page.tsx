@@ -2,10 +2,10 @@
 import { useDispatch } from "react-redux";
 import { useRouter } from "next/navigation";
 
-import Breadcrumb from "@/app/component/breadCrumb"
+import { AppDispatch } from "../../state/store";
+import { Breadcrumb } from "@/app/component";
 import { toggleModal } from "@/app/state/slice";
 import { services } from "@/app/utilis/services"
-import { AppDispatch } from "../../state/store";
 
 
 const ServiceDetails = ({ params }: { params: { name: string } }) => {

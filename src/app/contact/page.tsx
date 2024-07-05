@@ -1,6 +1,6 @@
 'use client'
 import { ChangeEvent, FormEvent, useState } from "react";
-import Breadcrumb from "../component/breadCrumb"
+import { Breadcrumb } from "../component";
 import { contactData } from "../utilis/type";
 
 const Contact = () => {

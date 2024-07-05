@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useDispatch } from "react-redux";
 import React, { useState, useEffect } from "react";
 
-import Logo from '../images/logo.png'
+import { Logo } from "../images";
 import { AppDispatch } from "../state/store";
 import { toggleModal } from "../state/slice";
 import { services } from "../utilis/services";

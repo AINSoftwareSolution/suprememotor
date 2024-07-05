@@ -1,7 +1,5 @@
 "use client"
-import Breadcrumb from "../component/breadCrumb"
-import ServiceCard from "../component/servicecard"
-
+import { Breadcrumb, ServiceCard } from "../component"
 import { services } from "../utilis/services"
 import { ServiceType } from "../utilis/type"
 

@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Breadcrumb from "../component/breadCrumb";
-import { benifits } from "../utilis/benifits";
-import about1 from "../images/about.png";
-import about2 from "../images/6-1.png";
 import Image from "next/image";
+
+import { about1, about2 } from "../images";
+import { benifits } from "../utilis/benifits";
+import { Breadcrumb } from "../component";
 
 const About = () => {
   return (

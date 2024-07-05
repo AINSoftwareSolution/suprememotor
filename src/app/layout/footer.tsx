@@ -3,8 +3,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { useDispatch } from "react-redux"
 
-import Logo from '../images/logo.png'
 import { services } from "../utilis/services"
+import { Logo } from "../images"
 import { AppDispatch } from "../state/store"
 import { toggleModal } from "../state/slice"
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
