@@ -4,10 +4,10 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="hero-wrapper bg-cover bg-top pt-28 text-white px-4 lg:px-6 relative">
-      <video autoPlay loop muted>
+      {/* <video autoPlay loop muted>
         <source src="/bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <div className="container mx-auto max-w-screen-xl">
         <div className="flex justify-center text-center">
           <div className="hero-style1 py-24 relative">

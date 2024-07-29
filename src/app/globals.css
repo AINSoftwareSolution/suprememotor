@@ -59,7 +59,7 @@ body {
   min-height: auto;
   position: relative;
   z-index: 2;
-  /* background-image: url('../app/images/banner-bg.png'); */
+  background-image: url('../app/images/banner-bg.png');
 }
 
 .hero-wrapper video {
